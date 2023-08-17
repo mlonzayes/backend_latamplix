@@ -1,5 +1,5 @@
 .env
-dist
-src/migrations/
+/dist
+/src/migrations/
 package-lock.json
 node_modules
