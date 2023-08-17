@@ -10,6 +10,9 @@ const cors_1 = __importDefault(require("cors"));
 const config_server_1 = require("./Config/config.server");
 const user_router_1 = require("./Users/user.router");
 const company_router_1 = require("./Company/company.router");
+const pack_router_1 = require("./Pack/pack.router");
+const product_router_1 = require("./Product/product.router");
+const pack_product_router_1 = require("./Pack Product/pack-product.router");
 class ServerBootstrap extends config_server_1.ConfigServer {
     constructor() {
         super();
@@ -30,7 +33,10 @@ class ServerBootstrap extends config_server_1.ConfigServer {
     routers() {
         return [
             new user_router_1.UserRouter().router,
-            new company_router_1.CompanyRouter().router
+            new company_router_1.CompanyRouter().router,
+            new pack_router_1.PackRouter().router,
+            new product_router_1.ProductRouter().router,
+            new pack_product_router_1.PackProductRouter().router
         ];
     }
     async dbConnect() {

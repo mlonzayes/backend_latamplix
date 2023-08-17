@@ -31,6 +31,10 @@ __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], UserEntity.prototype, "token_type", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], UserEntity.prototype, "token_quantity", void 0);
 exports.UserEntity = UserEntity = __decorate([
     (0, typeorm_1.Entity)({ name: 'user' })
 ], UserEntity);

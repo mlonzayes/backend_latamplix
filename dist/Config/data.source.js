@@ -41,7 +41,7 @@ exports.AppDataSource = new typeorm_1.DataSource({
     database: process.env.DB_DATABASE,
     entities: [__dirname + "/../**/*.entity{.ts,.js}"],
     migrations: [__dirname + "/../migrations/*{.ts,.js}"],
-    synchronize: true,
+    synchronize: false,
     migrationsRun: true,
     logging: false,
     namingStrategy: new typeorm_naming_strategies_1.SnakeNamingStrategy(),
